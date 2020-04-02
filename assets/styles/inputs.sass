@@ -1,0 +1,80 @@
+.form-field
+    input, textarea, select, .el-date-editor--date input
+        appearance: none
+        outline: none
+        border-radius: 8px
+        border: 2px solid #DFE2E7
+        transition: border-color 0.3s ease
+        padding: 7px 10px 8px
+        color: #000754
+        font-size: 14px
+        background: #fff
+        &::placeholder
+            color: #6B768A
+        &:focus
+            border-color: #298FCA
+
+
+    .el-date-editor--date
+        input
+            background-color: #EAEBEF
+            padding-left: 34.5px
+            font-weight: bold
+            border: 0
+            border-bottom: 1px solid rgb(217, 220, 227)
+            &:focus
+                border-color: rgb(217, 220, 227)
+        .el-input__prefix
+            display: none !important
+        .el-input__suffix
+            top: -4px
+
+
+    textarea
+        min-height: 56px
+        max-width: 100%
+        resize: none
+
+    select
+        background: #fff
+        width: 100%
+        height: 36px
+.el-input__inner
+    height: 36px !important
+
+.field-wrapper
+    position: relative
+    width: 100%
+
+.select-wrapper
+    &::before
+        content: ''
+        width: 10px
+        height: 14px
+        position: absolute
+        right: 7.5px
+        top: 11px
+        background: url("~static/icons/chevron.svg")
+
+.date-wrapper
+    &::before
+        content: ''
+        width: 17px
+        height: 17px
+        position: absolute
+        left: 12px
+        top: 7px
+        background: url("~static/icons/time.svg") no-repeat
+
+.el-picker-panel
+    border-radius: 8px !important
+    background: #F4F5F7 !important
+    color: #000754 !important
+.el-date-picker__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    button
+        box-shadow: unset
+        border: 1px solid #dddedf
+        margin-top: 0

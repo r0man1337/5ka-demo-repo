@@ -1,0 +1,30 @@
+@import 'variables'
+@import 'icons'
+@import 'buttons'
+@import 'inputs'
+@import '~element-ui/lib/theme-chalk/message'
+@import '~element-ui/lib/theme-chalk/message-box'
+@import '~element-ui/lib/theme-chalk/date-picker'
+@import '~element-ui/lib/theme-chalk/icon'
+
+.el-message.el-message--success
+    border: 0 !important
+    background: $success-color !important
+    color: #fff !important
+    border-radius: 8px
+    font-weight: bold
+.el-message__icon
+    display: none
+.el-message--success .el-message__content
+    color: #fff !important
+.flex-last-item
+    justify-self: flex-end
+    margin: 0 0 0 auto
+
+.page-enter-active, .page-leave-active
+    transition: opacity .3s ease
+
+.page-enter, .page-leave-active
+    opacity: 0
+.el-select-dropdown__item.selected
+    font-weight: 400 !important

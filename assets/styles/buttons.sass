@@ -1,0 +1,32 @@
+@import "variables"
+
+button
+    height: 32px
+    border-radius: 8px
+    background: $button-default-color
+    box-shadow: 0 1px 0 darken(#EAEBEF, 8)
+    border: 0
+    font-weight: 700
+    color: #000754
+    font-size: 14px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-stretch: ultra-expanded
+    padding: 7px 15px
+    &.success
+        background: $success-color
+        color: #fff
+        box-shadow: 0 1px 0 darken(#007E47, 8)
+    &.danger
+        background: $danger-color
+        color: #fff
+        box-shadow: 0 1px 0 #A9331B
+    &:hover
+        opacity: 0.85
+        cursor: pointer
+    &:disabled
+        background: #EAEBEF
+        color: #A4ABB8
+        box-shadow: none
+        cursor: default
